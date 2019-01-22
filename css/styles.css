@@ -5,6 +5,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   color: #09f749;
+  overflow: hidden;
 }
 
 .container {
@@ -37,4 +38,90 @@ body {
   margin-left: auto;
   margin-right: auto;
   height: 5em;
+}
+
+
+#meteor {
+  background: white;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  top: 40%;
+  left: 110%;
+  z-index: -1;
+
+  box-shadow:
+    2px -2px  blue,
+    4px -2px blue,
+    6px -2px  blue,
+    8px -2px blue,
+    10px -2px blue,
+    12px -4px blue,
+    14px -4px blue,
+    16px -4px blue,
+    18px -4px blue,
+    20px -4px blue,
+    22px -6px blue,
+    24px -6px blue,
+    26px -6px blue,
+    28px -6px blue,
+    30px -6px blue,
+    32px -8px blue,
+    34px -8px blue,
+    36px -8px blue,
+    38px -8px blue,
+    40px -8px blue,
+    42px -10px blue,
+    44px -10px blue,
+    46px -10px blue,
+    48px -10px blue,
+    50px -10px blue,
+    52px -12px blue,
+    54px -12px blue,
+    56px -12px blue,
+    58px -12px blue,
+    60px -12px blue,
+    62px -14px blue,
+    64px -14px blue,
+    66px -14px blue,
+    68px -14px blue,
+    70px -14px blue,
+    72px -16px blue,
+    74px -16px blue,
+    76px -16px blue,
+    78px -16px blue,
+    80px -16px blue,
+    82px -18px blue,
+    84px -18px blue,
+    86px -18px blue,
+    88px -18px blue,
+    90px -18px blue,
+    92px -20px blue,
+    94px -20px blue,
+    96px -20px blue,
+    98px -20px blue,
+    100px -20px blue,
+    102px -22px blue,
+    104px -22px blue,
+    106px -22px blue,
+    108px -22px blue,
+    110px -22px blue,
+    112px -24px blue,
+    114px -24px blue,
+    116px -24px blue,
+    118px -24px blue,
+    120px -24px blue;
+
+  animation: x 20s 5s infinite;
+}
+
+@Keyframes x {
+   0% {
+     left: 120%;
+     top: 40%;
+   }
+   4%, 100% {
+     left: -50%;
+     top: 120%;
+   }
 }
