@@ -1,0 +1,109 @@
+body {
+  background-color: black;
+  color: #00ff36;
+}
+
+nav {
+  background-color: rgba(0,0,0,0.5);
+  height: 2.5em;
+  width: 100%;
+  text-align: center;
+  padding-top: 5px;
+}
+
+#title-small {
+  height: 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#title-small:hover {
+  opacity: 0.8;
+}
+
+#outer-table {
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  table-layout: fixed;
+}
+
+#board {
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  table-layout: fixed;
+  width: 32.5em;
+  height: 32.5em;
+}
+
+#board td {
+  border: 0.2em solid #00ff36;
+  height: 4em;
+  width: 4em;
+}
+
+#player1, #player2, #reset {
+  display: inline-block;
+}
+
+.player1 {
+  color: red;
+}
+
+.player2 {
+  color: blue;
+}
+
+#board tr:nth-child(odd) td:nth-child(even), #board tr:nth-child(even) td:nth-child(odd){
+  background-color: white;
+}
+
+.center-col {
+  width: 28em;
+}
+
+.turn-text {
+  font-weight: bolder;
+}
+
+.outer-col {
+  width: 12em;
+  font-weight: bolder;
+}
+
+.piece {
+  height: 3.5em;
+  width: 3.5em;
+  border-radius: 100%;
+  margin: auto;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+}
+
+.selected {
+  border: 5px solid #00ff36;
+}
+
+.king:after {
+  color: #00ff36;
+  font-weight: bolder;
+  line-height: 3.5em;
+  content: "K";
+}
+
+button {
+  height: 3em;
+  width: 6em;
+  color: #00ff36;
+  background-color: black;
+  border: 4px solid #00ff36;
+  border-radius: 1em;
+}

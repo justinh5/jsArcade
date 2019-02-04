@@ -12,7 +12,7 @@ var ball = {
 
 var left = {
   y: 100,
-  vy: 10,
+  vy: 8,
   h: 100,
   h2: 50,
   w: 20,
@@ -21,7 +21,7 @@ var left = {
 
 var right = {
   y: 100,
-  vy: 10,
+  vy: 8,
   h: 100,
   h2: 50,
   w: 20,
@@ -39,7 +39,7 @@ function draw() {
   // Center line
   ctx.setLineDash([20, 20]);/*dashes are 5px and spaces are 3px*/
   ctx.beginPath();
-  ctx.moveTo(window.innerWidth/2, 0);
+  ctx.moveTo(window.innerWidth/2, 50);
   ctx.lineTo(window.innerWidth/2, window.innerHeight);
   ctx.lineWidth = 8;
   ctx.strokeStyle = "#09f749";
@@ -57,12 +57,12 @@ function draw() {
   if (ball.x - ball.hw2 + ball.vx < 0) {
     ball.vx = -ball.vx;
     left.vy = 0;
-    right.vy = 10;
+    right.vy = 8;
   }
   else if(ball.x + ball.hw2 + ball.vx > window.innerWidth - right.w) {
     ball.vx = -ball.vx;
     right.vy = 0;
-    left.vy = 10;
+    left.vy = 8;
   }
   if (ball.y + ball.hw2 + ball.vy > window.innerHeight || ball.y - ball.hw2 + ball.vy < 0) {
     ball.vy = -ball.vy;
@@ -113,12 +113,3 @@ function draw() {
 }
 
 window.requestAnimationFrame(draw);
-
-
-$(document).on('keypress', function(e) {
-    window.location.replace("index.html");
-});
-
-$(document).click(function() {
-    window.location.replace("index.html");
-});

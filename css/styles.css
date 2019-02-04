@@ -6,6 +6,8 @@ body {
   background-attachment: fixed;
   color: #09f749;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -190,4 +192,46 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
+}
+
+nav {
+  background-color: rgba(0,0,0,0.5);
+  height: 2.5em;
+  width: 100%;
+  text-align: center;
+  padding-top: 5px;
+}
+
+#title-small {
+  height: 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#title-small:hover {
+  opacity: 0.8;
+}
+
+#games {
+  height: 20em;
+  width: 100%;
+  margin-top: 8em;
+  position: absolute;
+  text-align: center;
+}
+
+#games table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.game {
+  height: 10em;
+  width: 10em;
+  border: 5px solid #09f749;
+  color: #09f749;
+}
+
+.game:hover {
+  cursor: pointer;
 }
