@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="js/jquery.js" type="text/javascript"></script>
     <script src="js/menu.js" type="text/javascript"></script>
@@ -14,17 +15,21 @@
     </nav>
     <canvas id="pong"></canvas>
     <div id="games">
+      <!-- <img src="img/x.jpg" id="menu-backing"> -->
       <table cellspacing="25px">
         <tr>
-          <td class="game" id="checkers" onclick="location.href='checkers.html'">CHECKERS</td>
-          <td class="game"></td>
+          <td class="game" onclick="location.href='checkers.html'"><button>Draughts</button></td>
+          <td class="game"><button>Starfleet</button></td>
         </tr>
         <tr>
-          <td class="game"></td>
-          <td class="game"></td>
+          <td class="game"><button>The Cave</button></td>
+          <td class="game"><button>Labyrinth</button></td>
         </tr>
       </table>
     </div>
+    <div class="meteor" id="meteor1"></div>
+    <div class="meteor" id="meteor2"></div>
+    <div class="meteor" id="meteor3"></div>
   </body>
 
 </html>
