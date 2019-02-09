@@ -255,17 +255,17 @@ button {
   transition: box-shadow 0.1s, background 0.1s, padding 0.1s;
 }
 
-button:active {
-  box-shadow: 5px 5px #2353E0, -5px 5px #2353E0, 0px 10px #2353E0, 0px 0px #133DB9, 10px 5px #2979FF, 10px 15px #2979FF, 5px 10px #2979FF, 15px 10px #2979FF;
-  background: #e242f4;
-  padding-top: 15px;
-  padding-bottom: 5px;
-  transition: box-shadow 0.1s, background 0.1s, padding 0.1s;
-}
-
 button:hover {
   box-shadow: 5px 0px #e242f4, -5px 0px #e242f4, 0px 5px #e242f4, 0px -5px #e242f4, 10px 5px #2979FF, 10px 15px #2979FF, 5px 10px #2979FF, 15px 10px #2979FF;
   background: #e242f4;
   color: #133DB9;
   cursor: pointer;
+}
+
+button:active {
+  box-shadow: 5px 5px #e242f4, -5px 5px #e242f4, 0px 10px #e242f4, 0px 0px #133DB9, 10px 5px #2979FF, 10px 15px #2979FF, 5px 10px #2979FF, 15px 10px #2979FF;
+  background: #e242f4;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  transition: box-shadow 0.1s, background 0.1s, padding 0.1s;
 }
