@@ -1,0 +1,57 @@
+body {
+  background-color: black;
+  color: #00ff36;
+  font-family: 'Press Start 2P', arial;
+  text-align: center;
+}
+
+
+nav {
+  background-color: rgba(0,0,0,0.5);
+  height: 2.5em;
+  width: 100%;
+  text-align: center;
+  padding-top: 5px;
+}
+
+#title-small {
+  height: 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#title-small:hover {
+  opacity: 0.8;
+}
+
+#maze {
+  width: 30%;
+  margin-top: 4em;
+  margin-left: auto;
+  margin-right: auto;
+  table-layout: fixed;
+  border: 2px solid #42f450;
+}
+
+td {
+  border-right: 2px solid #42f450;
+  border-top: 2px solid #42f450;
+  border-left: 2px solid #42f450;
+  border-bottom: 2px solid #42f450;
+}
+
+.no-left {
+  border-left: 0px solid #42f450;
+}
+
+.no-right {
+  border-right: 0px solid #42f450;
+}
+
+.no-top {
+  border-top: 0px solid #42f450;
+}
+
+.no-bottom {
+  border-bottom: 0px solid #42f450;
+}
