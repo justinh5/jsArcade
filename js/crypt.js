@@ -137,6 +137,16 @@ function displayPicture(path, text) {
     $("#pic").hide();
     $("#text-pic").text(text);
     $("#text-pic").show();
+
+    // update winning/losing Status
+    if(text.includes("Eureka")) {
+      $("#status").text("YOU WIN");
+      $("#status").addClass("winning blinking");
+    }
+    else if (text !== INTRO){
+      $("#status").text("YOU LOSE");
+      $("#status").addClass("losing blinking");
+    }
   }
 }
 
@@ -169,17 +179,20 @@ $(document).ready(function() {
   const TOTAL_NODES = 40;   // total nodes to generate
   var tree = null;          // root of the tree
   var current = null;       // current node the player is in
+  var depth = 1;            // keep track of the current depth
 
-  displayPicture(null, INTRO);
+  displayPicture(null, INTRO);  // display intro text
 
   $(".new-game").click(function() {
 
     $("#start-game").hide();
     $("#end-game").hide();
     $("#game-title").hide();
+    $("#status-container").show();
     $("#directions").show();
 
     tree = new TernaryTree();  // create new game tree
+    depth = 1;
 
     // Build the tree
     for (var i=0; i<TOTAL_NODES; ++i) {
@@ -191,6 +204,9 @@ $(document).ready(function() {
     // display first image at the root with buttons
     displayPicture(current.picture, null);
     displayButtons(current);
+    $("span#depth").text(depth);
+    $("#status").removeClass();
+    $("#status").text("searching");
   });
 
   $(".direction").click(function() {
@@ -209,14 +225,19 @@ $(document).ready(function() {
     }
     displayPicture(current.picture, current.message);
     displayButtons(current);
+    $("span#depth").text(++depth);
   });
 
   $("#reset").click(function() {
     current = tree.root;
+    depth = 1;
     displayPicture(current.picture, null);
     displayButtons(current);
     $("#end-game").hide();
     $("#directions").show();
+    $("span#depth").text(depth);
+    $("#status").removeClass();
+    $("#status").text("searching");
   });
 
 

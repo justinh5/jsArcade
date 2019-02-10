@@ -2,11 +2,9 @@ body {
   background-color: black;
   color: #00ff36;
   font-family: 'Press Start 2P', arial;
-}
-
-.container {
   text-align: center;
 }
+
 
 nav {
   background-color: rgba(0,0,0,0.5);
@@ -53,26 +51,40 @@ button:hover {
   cursor: pointer;
 }
 
+#status-container {
+  display: none;
+}
+
+#status-container p {
+  display: inline-block;
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+.winning {
+  color: #00ffd4;
+}
+
+.losing {
+  color: #f600ff;
+}
 
 #pic-container {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2em;
+  margin-top: 5em;
   width: 100%;
   max-width: 60em;
 }
 
 #text-pic {
-  margin-top: 5em;
 }
-
 
 #pic {
   display: none;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 3em;
   width: 100%;
   max-width: 60em;
 }
@@ -96,3 +108,11 @@ button:hover {
   margin-top: 2em;
   width: 100%;
 }
+
+.blinking {
+		    -webkit-animation: blink 1.5s step-end infinite;
+		            animation: blink 1.5s step-end infinite;
+}
+
+@-webkit-keyframes blink { 50% { visibility: hidden; }}
+@keyframes blink { 50% { visibility: hidden; }}
