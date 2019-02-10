@@ -55,10 +55,6 @@ button:hover {
 
 
 #pic-container {
-  text-align: center;
-}
-
-#pic {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -67,8 +63,23 @@ button:hover {
   max-width: 60em;
 }
 
+#text-pic {
+  margin-top: 5em;
+}
+
+
+#pic {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em;
+  width: 100%;
+  max-width: 60em;
+}
+
 #directions {
   display: none;
+  table-layout: fixed;
   margin-top: 2em;
   margin-left: auto;
   margin-right: auto;
