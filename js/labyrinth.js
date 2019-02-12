@@ -113,7 +113,9 @@ $(document).ready(function() {
     // remove start and finish walls and set player at starting point
     $("#0-0").addClass("no-top");
     $("#" + (maze.length-1) + "-" + (maze[0].length-1)).addClass("no-right");
-    $("#0-0").html("<img id='player' src=" + "img/milk.png" + ">");
+    $("#0-0").html("<img id='player' src=" + "img/labyrinth/down.gif" + ">");
+    $("#player-img").html("<img id='player' src=" + "img/labyrinth/down.gif" + ">");
+    $("#steps").text("0");
     player = [0, 0];
   });
 });
@@ -122,38 +124,42 @@ $(document).ready(function() {
 $(document).keydown(function(e) {
     if(maze.length > 0) {
       let current = $("#" + player[0] + "-" + player[1]);
+      let img = null, steps = parseInt($("#steps").text());
       switch(e.which) {
         case 37: // left
           if(player[1] > 0 && current.css("border-left-width") === "0px") {
             $("#" + player[0] + "-" + player[1]).empty();
+            img = "left";
             --player[1];
           }
           break;
         case 38: // up
           if(player[0] > 0 && current.css("border-top-width") === "0px") {
             $("#" + player[0] + "-" + player[1]).empty();
+            img = "up";
             --player[0];
           }
           break;
         case 39: // right
           if(player[1] < maze[0].length-1 && current.css("border-right-width") === "0px") {
             $("#" + player[0] + "-" + player[1]).empty();
+            img = "right";
             ++player[1];
           }
           break;
         case 40: // down
           if(player[0] < maze.length-1 && current.css("border-bottom-width") === "0px") {
             $("#" + player[0] + "-" + player[1]).empty();
+            img = "down";
             ++player[0];
           }
           break;
         default: return; // exit this handler for other keys
       }
-      $("#" + player[0] + "-" + player[1]).html("<img id='player' src=" + "img/milk.png" + ">");
-
-      // if the player reached the end
-      if(player[0] === maze.length-1 && player[1] === maze[0].length-1) {
-
+      if(img) {
+        $("#player-img").html("<img id='player' src=" + "img/labyrinth/"+img+".gif" + ">");
+        $("#" + player[0] + "-" + player[1]).html("<img id='player' src=" + "img/labyrinth/"+img+".gif" + ">");
+        $("#steps").text(++steps);
       }
     }
     //e.preventDefault(); // prevent the default action (scroll / move caret)

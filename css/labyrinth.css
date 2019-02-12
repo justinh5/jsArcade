@@ -24,8 +24,30 @@ nav {
   opacity: 0.8;
 }
 
-#params {
+#game-container {
+  margin-left: 3em;
   margin-top: 4em;
+  display: flex;
+  align-items: stretch;
+}
+
+#status-container {
+  text-align: left;
+}
+
+#status-container p {
+  padding-top: 1em;
+}
+
+#maze-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 12em;
+}
+
+#params {
+
 }
 
 .params-item {
@@ -52,9 +74,7 @@ nav {
 }
 
 #maze {
-  width: 38%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 50%;
   table-layout: fixed;
 }
 
@@ -87,12 +107,25 @@ td {
 
 #finish p {
   white-space: nowrap;
+  padding-left: 1em;
   position: absolute;
   transform: translate(0px, -1em);
 }
 
 #player {
   display: block;
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+#player-img {
+  display: flex;
+  align-items: center;
+  height: 15em;
+  width: 15em;
+  margin-bottom: 1em;
+  border: 2px solid #00ff36;
+  box-shadow: 5px 10px #00ff36;
 }

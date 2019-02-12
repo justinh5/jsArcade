@@ -13,11 +13,20 @@
     <nav>
       <a href="index.html"><img id="title-small" src="img/english.gif" alt="jsArcade"></a>
     </nav>
-      <div id="params">
-        <p class="params-item">Dimensions:</p>
-        <input id="size" class="params-item" maxlength="2"></input>
-        <button id="generate" class="params-item">GO</button>
+    <div id="game-container">
+      <div id="status-container">
+        <div id="player-img"></div>
+        <p>STEPS: <span id="steps"></span></p>
+        <p>USE ARROW KEYS TO NAVIGATE</p>
       </div>
-      <table id="maze"></table>
+      <div id="maze-container">
+        <div id="params">
+          <p class="params-item">Dimensions:</p>
+          <input id="size" class="params-item" maxlength="2"></input>
+          <button id="generate" class="params-item">GO</button>
+        </div>
+        <table id="maze"></table>
+      </div>
+    </div>
   </body>
 </html>
