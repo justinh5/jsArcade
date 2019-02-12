@@ -14,18 +14,18 @@
       <a href="index.html"><img id="title-small" src="img/english.gif" alt="jsArcade"></a>
     </nav>
     <canvas id="pong"></canvas>
-    <div id="games">
-      <!-- <img src="img/x.jpg" id="menu-backing"> -->
-      <table cellspacing="25px">
-        <tr>
-          <td class="game" onclick="location.href='checkers.html'"><button>Draughts</button></td>
-          <td class="game"><button>Starship</button></td>
-        </tr>
-        <tr>
-          <td class="game" onclick="location.href='crypt.html'"><button>The Crypt</button></td>
-          <td class="game" onclick="location.href='labyrinth.html'"><button>Labyrinth</button></td>
-        </tr>
-      </table>
+    <div id="menu-container">
+      <div id="games">
+        <!-- <img src="img/x.jpg" id="menu-backing"> -->
+        <div class="game-row">
+          <button onclick="location.href='checkers.html'">Draughts</button>
+          <button>Starship</button>
+        </div>
+        <div class="game-row">
+          <button onclick="location.href='crypt.html'">The Crypt</button>
+          <button onclick="location.href='labyrinth.html'">Labyrinth</button>
+        </div>
+      </div>
     </div>
     <div class="meteor" id="meteor1"></div>
     <div class="meteor" id="meteor2"></div>
