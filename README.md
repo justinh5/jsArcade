@@ -1,12 +1,12 @@
 # JS-Arcade
 
-Experimental browser games using only client-side JavaScript.
+Experimental browser games using only client-side JavaScript. Demo [here](https://justinh5.github.io/jsArcade/).
 
 ![Title screen](home.jpg)
 
 ## Getting Started
 
-Open in your desktop browser. Not intended for mobile devices! Some games require key presses.
+Open in your [desktop browser](https://justinh5.github.io/jsArcade/). Not intended for mobile devices! Some games require key presses.
 
 There are 4 games:
 * Draughts - Checkers
