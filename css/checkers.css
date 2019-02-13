@@ -43,29 +43,41 @@ nav {
 }
 
 
-#outer-table {
+#score-container {
   margin-top: 2em;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 20%;
+  margin-right: 20%;
   text-align: center;
-  table-layout: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
+#board-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+}
+
+
 #board {
-  margin-left: auto;
-  margin-right: auto;
-  display: inline-block;
   table-layout: fixed;
-  width: 32.5em;
-  height: 32.5em;
+  width: 35%;
   border: 0.2em solid #00ff36;
   border-collapse: collapse;
 }
 
 #board td {
-  /* border: 0.2em solid #00ff36; */
-  height: 3.9em;
-  width: 3.9em;
+  width: 4.375%;
+  position: relative;
+  z-index: -1;
+}
+
+td:after{
+  content: '';
+  display: block;
+  margin-top: 100%;
 }
 
 .player1 {
@@ -80,24 +92,21 @@ nav {
   background-color: white;
 }
 
-.center-col {
-  width: 28em;
+.turn {
+  margin: 2em;
 }
 
-.turn-text {
-  font-weight: bolder;
-}
-
-.outer-col {
-  width: 12em;
-  font-weight: bolder;
-}
 
 .piece {
-  height: 3.5em;
-  width: 3.5em;
+  width: 90%;
+  height: 90%;
   border-radius: 100%;
   margin: auto;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
 }
 
 .blue {
@@ -109,15 +118,18 @@ nav {
 }
 
 .selected {
-  border: 5px solid #00ff36;
+  background-color: #00ff36;
 }
 
 .king:after {
   color: #00ff36;
   font-weight: bolder;
-  line-height: 3.5em;
+  position: absolute;
+  left: 38%;
+  top: 37%;
   content: "K";
 }
+
 
 button {
   height: 3em;

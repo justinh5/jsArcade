@@ -334,14 +334,14 @@ function setBoard(pieces) {
 
 function displayTurn(board) {
 
-  $("#player1-turn").hide();
-  $("#player2-turn").hide();
+  $("#player1-turn").css("visibility", "hidden");
+  $("#player2-turn").css("visibility", "hidden");
 
   if(board.currentPlayer === 1) {
-    $("#player1-turn").show();
+    $("#player1-turn").css("visibility", "visible");
   }
   else {
-    $("#player2-turn").show();
+    $("#player2-turn").css("visibility", "visible");
   }
 
   //update scores
