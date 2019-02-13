@@ -2,7 +2,7 @@
 
 Experimental browser games using only client-side JavaScript.
 
-![Title screen](home.png)
+![Title screen](home.jpg)
 
 ## Getting Started
 
