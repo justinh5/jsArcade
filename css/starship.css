@@ -30,6 +30,21 @@ nav {
   opacity: 0.8;
 }
 
+.back-link {
+  position: absolute;
+  color: #00ff36;
+  float: left;
+  padding: 0.5em;
+}
+
+.back-link:hover {
+  opacity: 0.8;
+}
+
+.back-link:visited {
+  text-decoration: none;
+}
+
 
 
 .meteor {
