@@ -11,7 +11,7 @@ Open in your desktop browser. Not intended for mobile devices! Some games requir
 There are 4 games:
 * Draughts - Checkers
 * Starship - Alien blaster
-* The Crypt - A randomly generated memorization game
+* The Crypt - Random ternary memorization game
 * Labyrinth - Choose your own difficulty maze game
 
 ## Testing
