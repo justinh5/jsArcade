@@ -43,6 +43,9 @@ button {
   color: #00ff36;
   border: 3px solid #00ff36;
   background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
 }
 
 button:hover {

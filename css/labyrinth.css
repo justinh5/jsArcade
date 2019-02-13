@@ -60,12 +60,19 @@ nav {
   background-color: transparent;
   border: 2px solid #42f450;
   color: #42f450;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
 }
 
 #generate {
   background-color: #42f450;
   color: black;
   border: 0px solid #42f450;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  height: 1.5em;
 }
 
 #generate:hover {
@@ -76,6 +83,7 @@ nav {
 #maze {
   width: 50%;
   table-layout: fixed;
+  border-collapse: collapse;
 }
 
 td {
@@ -127,5 +135,4 @@ td {
   width: 15em;
   margin-bottom: 1em;
   border: 2px solid #00ff36;
-  box-shadow: 5px 10px #00ff36;
 }

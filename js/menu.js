@@ -1,13 +1,15 @@
 
 
+var ctx;
+const GREEN = '#09f749';
+
 var ball = {
   x: 50,
   y: 100,
   vx: 12,
   vy: 8,
   hw: 20,
-  hw2: 10,
-  color: "#09f749"
+  hw2: 10
 };
 
 var left = {
@@ -15,8 +17,7 @@ var left = {
   vy: 8,
   h: 100,
   h2: 50,
-  w: 20,
-  color: "#09f749"
+  w: 20
 };
 
 var right = {
@@ -24,33 +25,27 @@ var right = {
   vy: 8,
   h: 100,
   h2: 50,
-  w: 20,
-  color: "#09f749"
+  w: 20
 };
 
 
+function init() {
+
+  draw();
+}
+
+
 function draw() {
-  var ctx = document.getElementById('pong').getContext('2d');
   ctx.canvas.width  = window.innerWidth;
   ctx.canvas.height = window.innerHeight;
 
   ctx.clearRect(0, 0, 300, 300); // clear canvas
 
-  // Center line
-  ctx.setLineDash([20, 20]);/*dashes are 5px and spaces are 3px*/
-  ctx.beginPath();
-  ctx.moveTo(window.innerWidth/2, 50);
-  ctx.lineTo(window.innerWidth/2, window.innerHeight);
-  ctx.lineWidth = 8;
-  ctx.strokeStyle = "#09f749";
-  ctx.stroke();
-
-
   // Pong ball
   ctx.lineWidth = 0.1;
   ctx.rect(ball.x, ball.y, ball.hw, ball.hw);
   ctx.stroke();
-  ctx.fillStyle = ball.color;
+  ctx.fillStyle = GREEN;
   ctx.fill();
 
   // Ball
@@ -74,7 +69,6 @@ function draw() {
   // Left paddle
   ctx.rect(0, left.y, left.w, left.h);
   ctx.stroke();
-  ctx.fillStyle = "#09f749";
   ctx.fill();
   if (left.y + left.h + ball.vy > window.innerHeight) {
     left.vy = -left.vy;
@@ -93,7 +87,6 @@ function draw() {
   // Right paddle
   ctx.rect(window.innerWidth-20, right.y, right.w, right.h);
   ctx.stroke();
-  ctx.fillStyle = "#09f749";
   ctx.fill();
 
   if (right.y + right.h + ball.vy > window.innerHeight) {
@@ -109,7 +102,12 @@ function draw() {
   }
   right.y += right.vy;
 
+  //setTimeout(draw,1000/60);
+
   window.requestAnimationFrame(draw);
 }
 
-window.requestAnimationFrame(draw);
+window.onload = function () {
+  ctx = document.getElementById('pong').getContext('2d');
+  init();
+}

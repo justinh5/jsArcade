@@ -42,12 +42,14 @@ nav {
   table-layout: fixed;
   width: 32.5em;
   height: 32.5em;
+  border: 0.2em solid #00ff36;
+  border-collapse: collapse;
 }
 
 #board td {
-  border: 0.2em solid #00ff36;
-  height: 4em;
-  width: 4em;
+  /* border: 0.2em solid #00ff36; */
+  height: 3.9em;
+  width: 3.9em;
 }
 
 .player1 {
@@ -109,6 +111,8 @@ button {
   background-color: black;
   border: 4px solid #00ff36;
   border-radius: 1em;
+  font-family: inherit;
+  line-height: inherit;
 }
 
 button:hover {

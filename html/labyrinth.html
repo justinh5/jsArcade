@@ -2,22 +2,24 @@
 <html>
   <head>
     <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/labyrinth.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery.js"></script>
-    <script src="js/labyrinth.js"></script>
+    <link href="../css/labyrinth.css" rel="stylesheet" type="text/css">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/labyrinth.js"></script>
     <meta charset="utf-8">
     <title>JS Arcade</title>
   </head>
   <body>
     <nav>
-      <a href="index.html"><img id="title-small" src="img/english.gif" alt="jsArcade"></a>
+      <a href="../index.html"><img id="title-small" src="../img/english.gif" alt="jsArcade"></a>
     </nav>
     <div id="game-container">
       <div id="status-container">
         <div id="player-img"></div>
         <p>STEPS: <span id="steps"></span></p>
-        <p>USE ARROW KEYS TO NAVIGATE</p>
+        <ol>
+          <li>Enter maze dimensions
+          <li>Use arrow keys to navigate</li>
+        </ol>
       </div>
       <div id="maze-container">
         <div id="params">

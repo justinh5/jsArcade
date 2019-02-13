@@ -4,43 +4,32 @@ body {
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
+  font-family: 'Press Start 2P', arial;
   color: #09f749;
   overflow: hidden;
   margin: 0;
   padding: 0;
 }
 
-.container {
+
+nav {
+  background-color: rgba(0,0,0,0.5);
+  height: 2.5em;
+  width: 100%;
   text-align: center;
+  padding-top: 5px;
 }
 
-#title-container {
-  margin-top: 9em;
-}
-
-#english-title {
-  display: block;
+#title-small {
+  height: 2em;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
-  max-width: 50em;
 }
 
-#jap-title {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  max-width: 40em;
+#title-small:hover {
+  opacity: 0.8;
 }
 
-#start {
-  display: block;
-  margin-top: 6em;
-  margin-left: auto;
-  margin-right: auto;
-  height: 5em;
-}
 
 
 .meteor {
@@ -181,4 +170,9 @@ body {
      left: -50%;
      top: 40%;
    }
+}
+
+#score-container {
+  position: absolute;
+  margin-left: 2em;
 }
