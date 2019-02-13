@@ -22,7 +22,7 @@ var player = {
   w: 100
 };
 
-var score = 0;
+var score = 0;    // player score
 var shots = [];   // shots fired
 var enemies = []; // enemies on the field
 
@@ -89,7 +89,7 @@ function draw() {
 }
 
 function collisions() {
-  
+
   shots.forEach(function(shot, index, object) {
     enemies.forEach(function(enemy, index, object) {
       if(shot.y < enemy.y + EH && shot.y > enemy.y) {
@@ -142,6 +142,8 @@ function playerCommand(e) {
     }
 }
 
+
+// Generate a wave of enemies every 10 seconds
 window.setInterval(function() {
   let total = Math.floor(Math.random() * 3) + 3;
   for(let i=0; i<total; ++i) {

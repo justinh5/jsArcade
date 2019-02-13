@@ -361,7 +361,7 @@ $(document).ready(function() {
   displayTurn(board);
 
   $("#board td").click(function(e) {
-    var cell = $(this).attr("id");          //clicked cell
+    var cell = $(this).attr("id");          // clicked cell
 
     // Highlight piece if it belongs to the current player
     if(board.currentPiece(cell) === true) {

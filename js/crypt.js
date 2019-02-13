@@ -1,6 +1,4 @@
-
-
-const INTRO = "You stand at the entrance of a dark crypt. Legend says that there is priceless treasure hidden deep within its depths. No intrepid adventurer has ever returned upon entering the crypt. You switch on your flashlight and enter the darkness.";
+const INTRO = "You stand at the entrance of an old crypt. Legend says that there is priceless treasure hidden deep within its depths. No intrepid adventurer has ever returned upon entering the crypt. You switch on your flashlight and enter the darkness.";
 const outcome1 = "You are walking through the rough-hewn halls amid the eerie glow of your flashlight when suddenly...it flickers out. All of your spare batteries are dead and the darkness engulfs you.";
 const outcome2 = "You walk into a room with a simple stone alter amid the dim glow of candles on its surface. You think it's strange how there are lit candles as this place was said to be abandoned many years ago. Someone comes up from behind and immobilizes you with chloroform. When you awaken you find yourself strapped to the alter in the center of a ring of black-robed cult followers. You are sacrificed.";
 const outcome3 = "There is a peculiar tome clutched in the hands of one of the corpses. You wrest it out of its hands and find that it's in surprisingly good condition. It appears to be some sort of pagan manuscript. As you read out loud some of the text, a chill crawls down your throat. A malicious entity has claimed your soul.";
