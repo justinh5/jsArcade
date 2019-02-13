@@ -1,43 +1,39 @@
 body {
-  font-family: 'Press Start 2P', arial;
-  text-align: center;
-  color: #09f749;
-  margin: 0;
-  overflow: hidden;
+  background: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-nav {
-  background-color: rgba(0,0,0,0.5);
-  height: 2.5em;
-  width: 100%;
-  text-align: center;
-  padding-top: 5px;
+#title-container {
+  margin-top: 9em;
 }
 
-#title-small {
-  height: 2em;
+#english-title {
+  display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
+  max-width: 50em;
 }
 
-#title-small:hover {
-  opacity: 0.8;
+#jap-title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 40em;
 }
 
-.back-link {
-  position: absolute;
-  color: #00ff36;
-  float: left;
-  padding: 0.5em;
+#start {
+  display: block;
+  margin-top: 6em;
+  margin-left: auto;
+  margin-right: auto;
+  height: 5em;
 }
 
-.back-link:hover {
-  opacity: 0.8;
-}
-
-.back-link:visited {
-  text-decoration: none;
-}
 
 .meteor {
   background: #a9a6d8;

@@ -1,43 +1,5 @@
 body {
   background-color: black;
-  color: #00ff36;
-  font-family: 'Press Start 2P', arial;
-  text-align: center;
-  margin: 0;
-}
-
-
-nav {
-  background-color: rgba(0,0,0,0.5);
-  height: 2.5em;
-  width: 100%;
-  text-align: center;
-  padding-top: 5px;
-}
-
-.back-link {
-  position: absolute;
-  color: #00ff36;
-  float: left;
-  padding: 0.5em;
-}
-
-.back-link:hover {
-  opacity: 0.8;
-}
-
-.back-link:visited {
-  text-decoration: none;
-}
-
-#title-small {
-  height: 2em;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#title-small:hover {
-  opacity: 0.8;
 }
 
 #game-container {
@@ -60,10 +22,6 @@ nav {
   flex-direction: column;
   align-items: flex-start;
   margin-left: 12em;
-}
-
-#params {
-
 }
 
 .params-item {

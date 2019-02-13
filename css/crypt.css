@@ -1,45 +1,6 @@
 body {
   background-color: black;
-  color: #00ff36;
-  font-family: 'Press Start 2P', arial;
-  text-align: center;
-  margin: 0;
 }
-
-
-nav {
-  background-color: rgba(0,0,0,0.5);
-  height: 2.5em;
-  width: 100%;
-  text-align: center;
-  padding-top: 5px;
-}
-
-.back-link {
-  position: absolute;
-  color: #00ff36;
-  float: left;
-  padding: 0.5em;
-}
-
-.back-link:hover {
-  opacity: 0.8;
-}
-
-.back-link:visited {
-  text-decoration: none;
-}
-
-#title-small {
-  height: 2em;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#title-small:hover {
-  opacity: 0.8;
-}
-
 
 #game-title {
   display: block;
@@ -48,10 +9,6 @@ nav {
   margin-top: 2em;
   width: 100%;
   max-width: 50em;
-}
-
-td {
-  max-width: 5em;
 }
 
 button {
@@ -110,12 +67,11 @@ button:hover {
 }
 
 #directions {
-  display: none;
-  table-layout: fixed;
+  display: flex;
+  justify-content: space-around;
   margin-top: 2em;
-  margin-left: auto;
-  margin-right: auto;
-  width: 78%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 #start-game {

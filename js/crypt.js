@@ -153,18 +153,18 @@ function displayPicture(path, text) {
 
 function displayButtons(node) {
 
-  $("#left").hide();
-  $("#center").hide();
-  $("#right").hide();
+  $("#left").css("visibility", "hidden");
+  $("#center").css("visibility", "hidden");
+  $("#right").css("visibility", "hidden");
 
   if (node.left !== null) {
-    $("#left").show();
+    $("#left").css("visibility", "visible");
   }
   if (node.center !== null) {
-    $("#center").show();
+    $("#center").css("visibility", "visible");
   }
   if (node.right !== null) {
-    $("#right").show();
+    $("#right").css("visibility", "visible");
   }
   if ((node.right === null) && (node.left === null) && (node.center === null)) {
     $("#directions").hide();
@@ -182,6 +182,7 @@ $(document).ready(function() {
   var depth = 1;            // keep track of the current depth
 
   displayPicture(null, INTRO);  // display intro text
+  $("#directions").hide();
 
   $(".new-game").click(function() {
 

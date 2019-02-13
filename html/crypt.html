@@ -2,6 +2,7 @@
 <html>
   <head>
     <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../css/styles.css" type="text/css">
     <link href="../css/crypt.css" rel="stylesheet" type="text/css">
     <script src="../js/jquery.js"></script>
     <script src="../js/crypt.js"></script>
@@ -23,19 +24,11 @@
         <p id="text-pic"></p>
         <img id="pic" src="../img/crypt/three.png">
       </div>
-      <table id="directions">
-        <tr>
-          <td>
-            <button type="click" name="left" id="left" class="direction">Left</button>
-          </td>
-          <td>
-            <button type="click" name="center" id="center" class="direction">Center</button>
-          </td>
-          <td>
-            <button type="click" name="right" id="right" class="direction">Right</button>
-          </td>
-        </tr>
-      </table>
+      <div id="directions">
+        <button type="click" name="left" id="left" class="direction">Left</button>
+        <button type="click" name="center" id="center" class="direction">Center</button>
+        <button type="click" name="right" id="right" class="direction">Right</button>
+      </div>
       <div id="start-game">
         <button type="click" name="start-over" class="new-game">New Game</button>
       </div>
