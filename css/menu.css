@@ -7,7 +7,7 @@ body {
 }
 
 body:after {
-    content:"";
+    content: "";
     position: absolute;
     z-index: -1;
     top: 8%;
@@ -24,9 +24,15 @@ body:after {
 }
 
 #menu-container {
+  position: absolute;
+  top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  z-index: -1;
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   padding: 5em;
 }
 
@@ -35,8 +41,8 @@ body:after {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  width: 41em;
-  height: 26em;
+  width: 46vw;
+  height: 28vw;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -67,6 +73,7 @@ button {
   border: none;
   outline: none;
   font-size: 40px;
+  white-space: nowrap;
   padding: 10px;
   box-shadow: 5px 0px #133DB9, -5px 0px #133DB9, 0px 5px #133DB9, 0px -5px #133DB9, 10px 5px #2979FF, 10px 15px #2979FF, 5px 10px #2979FF, 15px 10px #2979FF;
   background: #133DB9;
@@ -87,4 +94,19 @@ button:active {
   padding-top: 15px;
   padding-bottom: 5px;
   transition: box-shadow 0.1s, background 0.1s, padding 0.1s;
+}
+
+@media screen and (max-width: 800px) {
+  #games {
+    width: 82vw;
+    height: 42vw;
+  }
+
+  /* button {
+    font-size: 99%;
+    width: 26vw;
+    height: 10vw;
+    padding-left: 5px;
+  } */
+
 }

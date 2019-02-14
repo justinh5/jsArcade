@@ -181,6 +181,7 @@ $(document).ready(function() {
 
   displayPicture(null, INTRO);  // display intro text
   $("#directions").hide();
+  $("#end-game").hide();
 
   $(".new-game").click(function() {
 

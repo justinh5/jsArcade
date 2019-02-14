@@ -178,3 +178,9 @@ nav {
      top: 40%;
    }
 }
+
+@media screen and (max-width: 800px) {
+  #meteor1, #meteor2, #meteor3 {
+    animation: none;
+  }
+}

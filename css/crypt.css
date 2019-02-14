@@ -2,13 +2,25 @@ body {
   background-color: black;
 }
 
+#container {
+  position: absolute;
+  top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  z-index: -1;
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #game-title {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2em;
-  width: 100%;
-  max-width: 50em;
+  /* margin-top: 2em; */
+  max-width: 70%;
 }
 
 button {
@@ -19,6 +31,7 @@ button {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  padding: 3px;
 }
 
 button:hover {
@@ -49,7 +62,7 @@ button:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5em;
+  margin-top: 2em;
   width: 100%;
   max-width: 60em;
 }
@@ -70,8 +83,7 @@ button:hover {
   display: flex;
   justify-content: space-around;
   margin-top: 2em;
-  margin-left: 20%;
-  margin-right: 20%;
+  width: 65%;
 }
 
 #start-game {
@@ -79,10 +91,10 @@ button:hover {
 }
 
 #end-game {
-  display: none;
-  table-layout: fixed;
+  display: flex;
+  justify-content: space-around;
   margin-top: 2em;
-  width: 100%;
+  width: 60%;
 }
 
 .blinking {

@@ -1,5 +1,6 @@
 body {
   background-color: black;
+  overflow: scroll;
 }
 
 #game-container {
@@ -7,10 +8,12 @@ body {
   margin-top: 4em;
   display: flex;
   align-items: stretch;
+  margin-bottom: 5em;
 }
 
 #status-container {
   text-align: left;
+  width: 15vw;
 }
 
 #status-container p {
@@ -21,7 +24,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 12em;
+  margin-left: 10em;
 }
 
 .params-item {
@@ -55,16 +58,23 @@ body {
 }
 
 #maze {
-  width: 50%;
+  width: 50vw;
   table-layout: fixed;
   border-collapse: collapse;
 }
 
 td {
+  position: relative;
   border-right: 2px solid #42f450;
   border-top: 2px solid #42f450;
   border-left: 2px solid #42f450;
   border-bottom: 2px solid #42f450;
+}
+
+td:after{
+  content: '';
+  display: block;
+  margin-top: 100%;
 }
 
 .no-left {
@@ -84,14 +94,8 @@ td {
 }
 
 #finish {
-  border: 0px solid transparent;
-}
-
-#finish p {
-  white-space: nowrap;
-  padding-left: 1em;
-  position: absolute;
-  transform: translate(0px, -1em);
+  display: none;
+  align-self: flex-end;
 }
 
 #player {
@@ -109,4 +113,12 @@ td {
   width: 15em;
   margin-bottom: 1em;
   border: 2px solid #00ff36;
+}
+
+.square {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }

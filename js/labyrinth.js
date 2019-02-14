@@ -97,15 +97,10 @@ $(document).ready(function() {
       let data = '';
       for(let j = 0; j < input; ++j) {
         data += ("<td id=" + i + "-" + j + "></td>");
-        if(i === input-1 && j === input-1) {  // add finish text at finish cell
-          data += ("<td id=finish><p>finish</p></td>");
-        }
       }
 
       $("#maze").append("<tr>" + data + "</tr>");
     }
-    $("td").css("width", (width/input) + "px");
-    $("td").css("height", (width/input) + "px");
 
     // break down walls
     makePath(0, 0);
@@ -113,9 +108,10 @@ $(document).ready(function() {
     // remove start and finish walls and set player at starting point
     $("#0-0").addClass("no-top");
     $("#" + (maze.length-1) + "-" + (maze[0].length-1)).addClass("no-right");
-    $("#0-0").html("<img id='player' src=" + "../img/labyrinth/down.gif" + ">");
+    $("#0-0").html("<div class=square><img id='player' src=" + "../img/labyrinth/down.gif" + "></div>");
     $("#player-img").html("<img id='player' src=" + "../img/labyrinth/down.gif" + ">");
     $("#steps").text("0");
+    $("#finish").show();
     player = [0, 0];
   });
 });
@@ -158,7 +154,7 @@ $(document).keydown(function(e) {
       }
       if(img) {
         $("#player-img").html("<img id='player' src=" + "../img/labyrinth/"+img+".gif" + ">");
-        $("#" + player[0] + "-" + player[1]).html("<img id='player' src=" + "../img/labyrinth/"+img+".gif" + ">");
+        $("#" + player[0] + "-" + player[1]).html("<div class=square><img id='player' src=" + "../img/labyrinth/"+img+".gif" + "></div>");
         $("#steps").text(++steps);
       }
       e.preventDefault(); // prevent the default action (scroll / move caret)

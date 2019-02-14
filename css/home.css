@@ -7,31 +7,33 @@ body {
 }
 
 #title-container {
-  margin-top: 9em;
+  position: absolute;
+  top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#inner-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #english-title {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  max-width: 50em;
+  max-width: 80%;
 }
 
 #jap-title {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  max-width: 40em;
+  max-width: 60%;
 }
 
 #start {
-  display: block;
   margin-top: 6em;
-  margin-left: auto;
-  margin-right: auto;
-  height: 5em;
+  width: 20%;
 }
 
 
@@ -173,4 +175,18 @@ body {
      left: -50%;
      top: 40%;
    }
+}
+
+@media screen and (max-width: 800px) {
+  #english-title {
+    max-width: 95%;
+  }
+
+  #jap-title {
+    max-width: 80%;
+  }
+
+  #start {
+    width: 40%;
+  }
 }
