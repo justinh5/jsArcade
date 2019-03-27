@@ -1,6 +1,6 @@
 # JS-Arcade
 
-Experimental browser games using only client-side JavaScript. Demo [here](https://justinh5.github.io/jsArcade/).
+Experimental browser games using only client-side JavaScript. Demo [here](https://romantic-haibt-758386.netlify.com/).
 
 ![Title screen](home.jpg)
 
@@ -26,11 +26,11 @@ There are 4 games:
 
 ## Testing
 
-| Browser    | Version        | Pass               |
-| ----------- | -----------   |                    |
-| Firefox     | 65.0.1        | :white_check_mark: |
-| Chrome   | 73.0.3683.86     | :white_check_mark: |
-| Safari   | 12.0.3           | :white_check_mark: | 
+| Browser     | Version        | Pass               |
+| ----------- | -------------- | ------------------ |
+| Firefox     | 65.0.1         | :white_check_mark: |
+| Chrome      | 73.0.3683.86   | :white_check_mark: |
+| Safari      | 12.0.3         | :white_check_mark: | 
 
 ## Contributing
 
