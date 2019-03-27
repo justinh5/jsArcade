@@ -1,4 +1,8 @@
-
+// require('normalize.css/normalize.css');
+require('@/styles/main.css');
+require('@/styles/starship.css');
+import img from '../assets/img/starship/player.png';
+import img2 from '../assets/img/starship/enemy.png';
 
 var ctx;
 var ship = new Image();
@@ -29,8 +33,8 @@ var enemies = []; // enemies on the field
 
 
 function init() {
-  ship.src = '../img/starship/player.png';
-  enemyShip.src = '../img/starship/enemy.png';
+  ship.src = '../assets/img/player.png';
+  enemyShip.src = '../assets/img/enemy.png';
   draw();
 }
 

@@ -1,5 +1,5 @@
 body {
-  background: url("../img/background.jpg");
+  background: url("/../assets/img/background.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -37,7 +37,7 @@ body:after {
 }
 
 #games {
-  background: url("../img/menu-plate.png");
+  background: url("/../assets/img/menu-plate.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

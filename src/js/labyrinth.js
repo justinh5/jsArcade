@@ -1,3 +1,12 @@
+// require('normalize.css/normalize.css');
+require('@/styles/main.css');
+require('@/styles/labyrinth.css');
+import up from '../assets/img/up.gif';
+import down from '../assets/img/down.gif';
+import left from '../assets/img/left.gif';
+import right from '../assets/img/right.gif';
+import $ from 'jquery';
+
 var maze = [];
 var player = [0, 0];
 
@@ -108,8 +117,8 @@ $(document).ready(function() {
     // remove start and finish walls and set player at starting point
     $("#0-0").addClass("no-top");
     $("#" + (maze.length-1) + "-" + (maze[0].length-1)).addClass("no-right");
-    $("#0-0").html("<div class=square><img id='player' src=" + "../img/labyrinth/down.gif" + "></div>");
-    $("#player-img").html("<img id='player' src=" + "../img/labyrinth/down.gif" + ">");
+    $("#0-0").html("<div class=square><img id='player' src=" + "../assets/img/down.gif" + "></div>");
+    $("#player-img").html("<img id='player' src=" + "../assets/img/down.gif" + ">");
     $("#steps").text("0");
     $("#finish").show();
     player = [0, 0];
@@ -153,8 +162,8 @@ $(document).keydown(function(e) {
         default: return; // exit this handler for other keys
       }
       if(img) {
-        $("#player-img").html("<img id='player' src=" + "../img/labyrinth/"+img+".gif" + ">");
-        $("#" + player[0] + "-" + player[1]).html("<div class=square><img id='player' src=" + "../img/labyrinth/"+img+".gif" + "></div>");
+        $("#player-img").html("<img id='player' src=" + "../assets/img/"+img+".gif" + ">");
+        $("#" + player[0] + "-" + player[1]).html("<div class=square><img id='player' src=" + "../assets/img/"+img+".gif" + "></div>");
         $("#steps").text(++steps);
       }
       e.preventDefault(); // prevent the default action (scroll / move caret)

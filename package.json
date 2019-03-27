@@ -1,0 +1,66 @@
+{
+  "name": "jsarcade",
+  "version": "1.0.0",
+  "description": "Experimental browser games",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/karma/bin/karma start karma.conf.js",
+    "build": "webpack --mode development",
+    "start": "npm run build; webpack-dev-server --open --mode development",
+    "lint": "eslint src/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justinh5/jsArcade.git"
+  },
+  "keywords": [
+    "games",
+    "javaScript"
+  ],
+  "author": "Justin Haupt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/justinh5/jsArcade/issues"
+  },
+  "homepage": "https://github.com/justinh5/jsArcade#readme",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "normalize.css": "^8.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.3",
+    "babel-preset-es2015": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.18",
+    "css-loader": "^0.28.10",
+    "dotenv-webpack": "^1.7.0",
+    "eslint": "^4.18.2",
+    "eslint-loader": "^2.0.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^1.1.6",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.0.6",
+    "html-withimg-loader": "^0.1.16",
+    "http-server": "^0.10.0",
+    "jasmine": "^3.1.0",
+    "jasmine-core": "^2.99.0",
+    "karma": "^2.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-cli": "^1.0.1",
+    "karma-jasmine": "^1.1.1",
+    "karma-jasmine-html-reporter": "^0.2.2",
+    "karma-jquery": "^0.2.2",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^2.0.13",
+    "node-sass": "^4.9.3",
+    "postcss-loader": "^2.0.8",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.20.2",
+    "uglifyjs-webpack-plugin": "^1.2.2",
+    "url-loader": "^0.6.2",
+    "webpack": "4.19.1",
+    "webpack-cli": "^2.0.9",
+    "webpack-dev-server": "^3.1.0"
+  }
+}

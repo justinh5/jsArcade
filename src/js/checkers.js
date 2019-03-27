@@ -1,4 +1,7 @@
-
+// require('normalize.css/normalize.css');
+require('@/styles/main.css');
+require('@/styles/checkers.css');
+import $ from 'jquery';
 
 function Board() {
   this.pieces = [];

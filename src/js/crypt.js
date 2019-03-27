@@ -1,3 +1,15 @@
+// require('normalize.css/normalize.css');
+require('@/styles/main.css');
+require('@/styles/crypt.css');
+import three from "../assets/img/three.png";
+import twoCenter from "../assets/img/twoCenter.png";
+import twoLeft from "../assets/img/twoLeft.png";
+import twoRight from "../assets/img/twoRight.png";
+import oneRight from "../assets/img/oneRight.png";
+import oneCenter from "../assets/img/oneCenter.png";
+import oneleft from "../assets/img/oneLeft.png";
+import $ from 'jquery';
+
 const INTRO = "You stand at the entrance of an old crypt. Legend says that there is priceless treasure hidden deep within its depths. No intrepid adventurer has ever returned upon entering the crypt. You switch on your flashlight and enter the darkness.";
 const outcome1 = "You are walking through the rough-hewn halls amid the eerie glow of your flashlight when suddenly...it flickers out. All of your spare batteries are dead and the darkness engulfs you.";
 const outcome2 = "You walk into a room with a simple stone alter amid the dim glow of candles on its surface. You think it's strange how there are lit candles as this place was said to be abandoned many years ago. Someone comes up from behind and immobilizes you with chloroform. When you awaken you find yourself strapped to the alter in the center of a ring of black-robed cult followers. You are sacrificed.";
@@ -13,13 +25,13 @@ const WIN = "Eureka! You walk into a room that's filled with gold. You stuff a h
 const DEATHS = [outcome1, outcome2, outcome3, outcome4, outcome5, outcome6, outcome7, outcome8, outcome9, outcome10];
 const DIRECTIONS = ["left", "center", "right"];
 
-const three = "../img/crypt/three.png";
-const twoCenter = "../img/crypt/twoCenter.png";
-const twoLeft = "../img/crypt/twoLeft.png";
-const twoRight = "../img/crypt/twoRight.png";
-const oneRight = "../img/crypt/oneRight.png";
-const oneCenter = "../img/crypt/oneCenter.png";
-const oneleft = "../img/crypt/oneLeft.png";
+// const three = "../img/crypt/three.png";
+// const twoCenter = "../img/crypt/twoCenter.png";
+// const twoLeft = "../img/crypt/twoLeft.png";
+// const twoRight = "../img/crypt/twoRight.png";
+// const oneRight = "../img/crypt/oneRight.png";
+// const oneCenter = "../img/crypt/oneCenter.png";
+// const oneleft = "../img/crypt/oneLeft.png";
 
 function TernaryTree() {
   this.root = null;

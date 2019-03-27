@@ -1,4 +1,7 @@
-
+// require('normalize.css/normalize.css');
+require('@/styles/main.css');
+require('@/styles/menu.css');
+import img from '../assets/img/menu-plate.png';
 
 var ctx;
 const GREEN = '#09f749';

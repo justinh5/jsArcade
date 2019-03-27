@@ -6,6 +6,16 @@ Experimental browser games using only client-side JavaScript. Demo [here](https:
 
 ## Getting Started
 
+install dependencies
+```
+npm install
+```
+
+run dev server
+```
+npm start
+```
+
 Open in your [desktop browser](https://justinh5.github.io/jsArcade/). Not intended for mobile devices! Some games require key presses.
 
 There are 4 games:
@@ -16,7 +26,11 @@ There are 4 games:
 
 ## Testing
 
-Only tested in Firefox and Chrome.
+| Browser    | Version        | Pass               |
+| ----------- | -----------   |                    |
+| Firefox     | 65.0.1        | :white_check_mark: |
+| Chrome   | 73.0.3683.86     | :white_check_mark: |
+| Safari   | 12.0.3           | :white_check_mark: | 
 
 ## Contributing
 
