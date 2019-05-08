@@ -177,8 +177,8 @@ function displayButtons(node) {
     $("#right").css("visibility", "visible");
   }
   if ((node.right === null) && (node.left === null) && (node.center === null)) {
-    $("#directions").hide();
-    $("#end-game").show();
+    $("#directions").css('display', 'none');
+    $("#end-game").css('display', 'flex');
   }
 }
 
@@ -192,16 +192,14 @@ $(document).ready(function() {
   var depth = 1;            // keep track of the current depth
 
   displayPicture(null, INTRO);  // display intro text
-  $("#directions").hide();
-  $("#end-game").hide();
 
   $(".new-game").click(function() {
 
     $("#start-game").hide();
-    $("#end-game").hide();
+    $("#end-game").css('display', 'none');
     $("#game-title").hide();
     $("#status-container").show();
-    $("#directions").show();
+    $("#directions").css('display', 'flex');
 
     tree = new TernaryTree();  // create new game tree
     depth = 1;
@@ -245,8 +243,8 @@ $(document).ready(function() {
     depth = 1;
     displayPicture(current.picture, null);
     displayButtons(current);
-    $("#end-game").hide();
-    $("#directions").show();
+    $("#end-game").css('display', 'none');
+    $("#directions").css('display', 'flex');
     $("span#depth").text(depth);
     $("#status").removeClass();
     $("#status").text("searching");

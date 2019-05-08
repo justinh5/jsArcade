@@ -1,11 +1,3 @@
-body {
-  background: url("/../assets/img/background.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
 body:after {
     content: "";
     position: absolute;
@@ -37,16 +29,7 @@ body:after {
 }
 
 #games {
-  background: url("/../assets/img/menu-plate.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  width: 46vw;
-  height: 28vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 2em;
+
 }
 
 #games table {

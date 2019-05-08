@@ -52,6 +52,7 @@ td:after{
 }
 
 .turn {
+  visibility: hidden;
   margin: 2em;
 }
 

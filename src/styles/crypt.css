@@ -19,7 +19,6 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  /* margin-top: 2em; */
   max-width: 70%;
 }
 
@@ -80,7 +79,7 @@ button:hover {
 }
 
 #directions {
-  display: flex;
+  display: none;
   justify-content: space-around;
   margin-top: 2em;
   width: 65%;
@@ -91,7 +90,7 @@ button:hover {
 }
 
 #end-game {
-  display: flex;
+  display: none;
   justify-content: space-around;
   margin-top: 2em;
   width: 60%;

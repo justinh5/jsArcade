@@ -6,13 +6,27 @@
     <title>JS Arcade</title>
   </head>
 
-  <body>
+  <body style="background: url('./assets/img/background.jpg');
+               background-repeat: no-repeat;
+               background-position: center center;
+               background-size: cover;
+               background-attachment: fixed;
+               background-color: black;">
     <nav>
       <a href="index.html"><img id="title-small" src="assets/img/english.gif" alt="jsArcade"></a>
     </nav>
     <canvas id="pong"></canvas>
     <div id="menu-container">
-      <div id="games">
+      <div id="games" style="background: url('./assets/img/menu-plate.png');
+                             background-repeat: no-repeat;
+                             background-size: contain;
+                             background-position: center;
+                             width: 46vw;
+                             height: 28vw;
+                             display: flex;
+                             flex-direction: column;
+                             justify-content: space-around;
+                             padding: 2em;">
         <div class="game-row">
           <button onclick="location.href='checkers.html'">Draughts</button>
           <button onclick="location.href='starship.html'">Starship</button>

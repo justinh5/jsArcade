@@ -1,11 +1,3 @@
-body {
-  background: url("/../assets/img/background.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
 #title-container {
   position: absolute;
   top: 0;
