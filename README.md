@@ -1,6 +1,6 @@
 # JS-Arcade
 
-Experimental browser games using only client-side JavaScript. Demo [here](https://jsarcade.netlify.com/).
+Experimental browser games using only client-side JavaScript. Demo [here](https://jsarcade.netlify.app/).
 
 ![Title screen](home.jpg)
 
@@ -16,7 +16,7 @@ run dev server
 npm start
 ```
 
-Open in your [desktop browser](https://justinh5.github.io/jsArcade/). Not intended for mobile devices! Some games require key presses.
+Open in your [desktop browser](https://jsarcade.netlify.app/). Not intended for mobile devices! Some games require key presses.
 
 There are 4 games:
 * Draughts - Checkers
