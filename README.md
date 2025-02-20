@@ -26,11 +26,11 @@ There are 4 games:
 
 ## Testing
 
-| Browser     | Version        | Pass               |
-| ----------- | -------------- | ------------------ |
-| Firefox     | 65.0.1         | :white_check_mark: |
-| Chrome      | 73.0.3683.86   | :white_check_mark: |
-| Safari      | 12.0.3         | :white_check_mark: |
+| Browser     | Version          | Pass               |
+| ----------- | ---------------- | ------------------ |
+| Firefox     | 135.0            | :white_check_mark: |
+| Chrome      | 133.0.6943.127   | :warning:          |
+| Safari      | 18.3             | :warning:          |
 
 ## Contributing
 
